@@ -17,7 +17,7 @@ yarn add kenya-utils
 pnpm add kenya-utils
 ```
 
-Works in Node 18+, browsers, Next.js (server and client), Cloudflare Workers, Deno, Bun. No dependencies.
+Works in Node 20+, browsers, Next.js (server and client), Cloudflare Workers, Deno, Bun. No dependencies.
 
 ## A quick taste
 
