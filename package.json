@@ -1,0 +1,94 @@
+{
+  "name": "kenya-utils",
+  "version": "0.0.1",
+  "description": "Kenya utilities for JavaScript & TypeScript — phone validation, KRA PIN, counties dataset, currency formatting. Works in Node, browsers, and edge runtimes.",
+  "keywords": [
+    "kenya",
+    "kra-pin",
+    "kra",
+    "phone-validation",
+    "phone-number",
+    "kenyan",
+    "counties",
+    "currency",
+    "kes",
+    "africa",
+    "validation",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Collins Mbathi <perezcollins87@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Collins87mbathi/kenya-utils.git"
+  },
+  "homepage": "https://github.com/Collins87mbathi/kenya-utils#readme",
+  "bugs": {
+    "url": "https://github.com/Collins87mbathi/kenya-utils/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js",
+        "require": "./dist/index.cjs"
+      },
+      "./phone": {
+        "types": "./dist/phone.d.ts",
+        "import": "./dist/phone.js",
+        "require": "./dist/phone.cjs"
+      },
+      "./kra-pin": {
+        "types": "./dist/kra-pin.d.ts",
+        "import": "./dist/kra-pin.js",
+        "require": "./dist/kra-pin.cjs"
+      },
+      "./national-id": {
+        "types": "./dist/national-id.d.ts",
+        "import": "./dist/national-id.js",
+        "require": "./dist/national-id.cjs"
+      },
+      "./counties": {
+        "types": "./dist/counties.d.ts",
+        "import": "./dist/counties.js",
+        "require": "./dist/counties.cjs"
+      },
+      "./currency": {
+        "types": "./dist/currency.d.ts",
+        "import": "./dist/currency.js",
+        "require": "./dist/currency.cjs"
+      },
+      "./mpesa": {
+        "types": "./dist/mpesa.d.ts",
+        "import": "./dist/mpesa.js",
+        "require": "./dist/mpesa.cjs"
+      }
+    },
+
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "yarn build && yarn test && yarn typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  }
+}
