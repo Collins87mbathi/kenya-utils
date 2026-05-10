@@ -4,6 +4,7 @@ Helpers for Kenya-specific data in JavaScript and TypeScript — phone numbers, 
 
 I built this because I kept copying the same regexes between projects. If you've been doing the same, this is for you.
 
+[![CI](https://github.com/Collins87mbathi/kenya-utils/actions/workflows/ci.yml/badge.svg)](https://github.com/Collins87mbathi/kenya-utils/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/kenya-utils.svg)](https://www.npmjs.com/package/kenya-utils)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/kenya-utils)](https://bundlephobia.com/package/kenya-utils)
 [![license](https://img.shields.io/npm/l/kenya-utils.svg?cacheSeconds=60)](./LICENSE)
