@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest a new helper or improvement
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Tell me about the use case, not the solution. Most good APIs come from understanding the problem first.
+      placeholder: e.g. "I'm building a SACCO app and need to validate Sharia-compliant payment references..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: What you'd like to see
+      description: Optional. A rough API sketch is fine — happy to refine it.
+      render: ts
+      placeholder: |
+        import { something } from "kenya-utils/something";
+        something(...);
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Have you tried anything else?
+      description: Workarounds, similar libraries, copy-pasted snippets — useful context.

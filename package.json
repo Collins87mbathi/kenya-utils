@@ -1,6 +1,6 @@
 {
   "name": "kenya-utils",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Kenya utilities for JavaScript & TypeScript — phone validation, KRA PIN, counties dataset, currency formatting. Works in Node, browsers, and edge runtimes.",
   "keywords": [
     "kenya",

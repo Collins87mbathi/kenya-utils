@@ -1,0 +1,30 @@
+name: Data correction
+description: Fix a sub-county, network prefix, county capital, or similar dataset entry
+labels: ["data"]
+body:
+  - type: dropdown
+    id: dataset
+    attributes:
+      label: Which dataset?
+      options:
+        - counties / sub-counties
+        - phone network prefixes
+        - currency / KES words
+        - other (describe below)
+    validations:
+      required: true
+
+  - type: input
+    id: where
+    attributes:
+      label: Specifically what's wrong
+      placeholder: e.g. "Tharaka-Nithi capital should be Chuka, not Kathwana"
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source for the correction
+      description: A link to an official IEBC/KNBS/CA source helps me merge faster.
+      placeholder: e.g. https://iebc.or.ke/...

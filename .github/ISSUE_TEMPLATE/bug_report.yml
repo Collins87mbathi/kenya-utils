@@ -1,0 +1,54 @@
+name: Bug report
+description: Something doesn't work the way it should
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. A failing test case is the gold standard — if you can reduce the bug to a few lines that reproduce it, we can fix it fast.
+
+  - type: input
+    id: version
+    attributes:
+      label: kenya-utils version
+      description: The version you're running. Find it with `npm ls kenya-utils`.
+      placeholder: e.g. 1.0.1
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Node version, runtime, framework, browser if relevant.
+      placeholder: e.g. Node 20, Next.js 14, macOS
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: The smallest code that reproduces the bug. A failing test case is even better.
+      render: ts
+      placeholder: |
+        import { parsePhone } from "kenya-utils";
+        parsePhone("0712345678"); // expected ..., got ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      placeholder: e.g. parsePhone should return network "Safaricom"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What you got
+      placeholder: e.g. it returned network "Unknown"
+    validations:
+      required: true
